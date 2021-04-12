@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.wolfjc.bloom.service.pb";
+option java_outer_classname = "BloomFilter";
+
+package grpc;
+
+service BloomFilterService {
+    //保存key
+    rpc SaveKey(BloomFilterReq) returns (BloomFilterResp){}
+    //判断key是否存在
+    rpc IsExist(BloomFilterReq) returns (BloomFilterResp){}
+}
+
+message BloomFilterReq {
+    string key = 1; //编码
+}
+
+message BloomFilterResp {
+    bool isExist = 1; //是否存在
+}

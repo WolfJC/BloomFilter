@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "filter.expectedInsertions",
+      "type": "java.lang.String",
+      "description": "expectedInsertions."
+    },
+    {
+      "name": "filter.name",
+      "type": "java.lang.String",
+      "description": "filter.name."
+    },
+    {
+      "name": "filter.fpp",
+      "type": "java.lang.String",
+      "description": "filter.fpp."
+    },
+    {
+      "name": "grpc.port",
+      "type": "java.lang.Integer",
+      "description": "grpc服务端口."
+    }
+  ] }
